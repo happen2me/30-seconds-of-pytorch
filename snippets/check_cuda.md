@@ -18,3 +18,11 @@ def check_cuda():
     else:
         return False
 ```
+
+Direct test in command line
+```python
+import torch
+device = torch.device("cuda")
+a = torch.zeros((2,2))
+a.to(device)
+``
